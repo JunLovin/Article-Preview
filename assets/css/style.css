@@ -65,6 +65,33 @@ main section .img-container img {
     letter-spacing: .5px;
 }
 
+.share-options {
+    display: none;
+    color: var(--grayish-blue);   
+    background-color: var(--desaturated-dark-blue);
+    padding: 0 1rem;
+    text-align: center;
+    align-content: center;
+    border-radius: 1rem;
+}
+
+.share-options span {
+    margin-right: .9rem;
+}
+
+.share-options a {
+    margin: 0 .4rem;
+}
+
+.hidden {
+    display: inline-block;
+    position: absolute;
+    right: 28rem;
+    top: 29rem;
+    width: 15rem;
+    height: 3rem;
+}
+
 .article .principal-section .author {
     display: inline-flex;
 }
@@ -98,8 +125,14 @@ main section .img-container img {
     text-align: center;
     border-radius: 2rem;
     background-color: var(--light-grayish-blue);
+    cursor: pointer;
 }
 
-.article .principal-section .share img {
-    cursor: pointer;
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
