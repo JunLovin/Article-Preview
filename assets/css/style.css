@@ -1,0 +1,101 @@
+:root {
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    width: 100%;
+    height: 90vh;
+    background-color: var(--light-grayish-blue);
+    font-size: 13px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 55rem;
+    height: 20rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+}
+
+main section .img-container img {
+    width: 22rem;
+    height: 20rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.article .principal-section {
+    height: 100%;
+    padding: 2rem;
+}
+
+.article .principal-section h4 {
+    font-size: 1.5rem;
+    color: var(--very-dark-grayish-blue);
+}
+
+.article .principal-section p {
+    font-size: .9rem;
+    color: var(--desaturated-dark-blue);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    word-spacing: 2px;
+    letter-spacing: .5px;
+}
+
+.article .principal-section .author {
+    display: inline-flex;
+}
+
+.article .principal-section .author .author-info {
+    margin-left: 1.5rem;
+    align-content: center;
+}
+
+.article .principal-section .author .author-info h5 {
+    font-size: .8rem;
+    color: var(--very-dark-grayish-blue);
+    margin: 0;
+}
+
+.article .principal-section .author .author-info p {
+    margin: 0;
+}
+
+.article .principal-section .author img {
+    width: 4rem;
+    border-radius: 100%;
+}
+
+.article .principal-section .share {
+    float: right;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 1.3rem;
+}
+
+.article .principal-section .share img {
+    cursor: pointer;
+}
