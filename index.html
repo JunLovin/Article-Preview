@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Article preview component</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,40 +14,49 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/style.css">
-
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
   <main>
     <section class="article">
       <div class="img-container">
-        <img src="assets/images/drawers.jpg" alt="Drawers"/>
+        <img src="assets/images/drawers.jpg" alt="Drawers" />
       </div>
       <div class="principal-section">
         <h4>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h4>
-        <p>Ever been in a room and left like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
-        <div class="author">
-          <img src="assets/images/avatar-michelle.jpg" alt="Michelle Appleton"/>
+        <p id="paragraph">Ever been in a room and left like something was missing? Perhaps it felt slightly bare and uninviting. I've
+          got some simple tips to help you make any room feel complete.</p>
+        <div class="author" id="author">
+          <img src="assets/images/avatar-michelle.jpg" alt="Michelle Appleton" />
           <div class="author-info">
             <h5>Michelle Appleton</h5>
             <p>28 Jun 2020</p>
           </div>
         </div>
-        <div class="share">
-          <img src="assets/images/icon-share.svg" alt="">
+        <div class="share-container" id="share-container">
+          <div class="share-options" id="share-options">
+            <span>S H A R E</span>
+            <ul>
+              <li><img src="assets/images/icon-pinterest.svg" alt=""></li>
+              <li><img src="assets/images/icon-twitter.svg" alt=""></li>
+              <li><img src="assets/images/icon-facebook.svg" alt=""></li>
+            </ul>
+          </div>
+          <div class="space"></div>
+          <div class="share" id="share">
+            <img src="assets/images/icon-share.svg" alt="Share Button">
+        </div>
         </div>
       </div>
     </section>
   </main>
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/Junlovin" target="_blank">JunLovin</a>.
   </div>
-
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>
