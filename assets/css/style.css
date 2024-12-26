@@ -65,35 +65,60 @@ main section .img-container img {
     letter-spacing: .5px;
 }
 
+.absolute {
+    position: absolute;
+    width: 29rem;
+}
+
+.share-container {
+    justify-items: center;
+    position: absolute;
+    width: 30rem;
+    height: 12rem;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
 .share-options {
     display: none;
     color: var(--grayish-blue);   
     background-color: var(--desaturated-dark-blue);
-    padding: 0 1rem;
-    text-align: center;
-    align-content: center;
-    border-radius: 1rem;
-}
-
-.share-options span {
-    margin-right: .9rem;
-}
-
-.share-options a {
-    margin: 0 .4rem;
 }
 
 .hidden {
-    display: inline-block;
-    position: absolute;
-    right: 28rem;
-    top: 29rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 15rem;
-    height: 3rem;
+    height: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 2.2rem;
+}
+
+.hidden ul {
+    margin-left: 1rem;
+}
+
+.hidden ul li {
+    display: inline-block;
+    width: 2rem;
+    float: right;
+    display: flex;
+    flex-direction: row-reverse;
+    cursor: pointer;
 }
 
 .article .principal-section .author {
     display: inline-flex;
+}
+
+.margin {
+    margin-top: 5.55rem;
+}
+.space {
+    height: .5rem;
 }
 
 .article .principal-section .author .author-info {
@@ -117,15 +142,19 @@ main section .img-container img {
 }
 
 .article .principal-section .share {
-    float: right;
     width: 2rem;
     height: 2rem;
-    margin-top: 1rem;
+    margin-top: .65rem;
     align-content: center;
     text-align: center;
     border-radius: 2rem;
     background-color: var(--light-grayish-blue);
+    color: var(--white);
     cursor: pointer;
+}
+
+.article .principal-section .active {
+    margin: 0;
 }
 
 .attribution {
@@ -135,4 +164,91 @@ main section .img-container img {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 480px) {
+    main {
+        width: 100%;
+        height: 100vh;
+    }
+    main section {
+        display: block;
+        width: 90%;
+        height: 87%;
+    }
+    section .img-container img {
+        width: 100% !important;
+        border-bottom-left-radius: 0  !important;
+        border-top-right-radius: 1rem;
+    }
+    .principal-section h4, .principal-section p, .author {
+        padding: 1rem;
+    }
+    .article .principal-section {
+        height: 300px;
+        padding: 0;
+    }
+    .article .principal-section h4 {
+        font-size: 1rem;
+        padding-bottom: 0;
+    }
+    .article .principal-section p {
+        font-size: .75rem;
+        margin-bottom: 0;
+        padding-top: 0 !important;
+    }
+    .author {
+        display: flex;
+        width: 80%;
+    }
+    .margin {
+        display: none !important;
+    }
+    .share-container {
+        margin: 0;
+        width: 35%;
+        height: auto;
+        padding-top: .7rem;
+        display: inline-flex;
+        flex-direction: row;
+    }
+    .author, .share-container {
+        margin-top: 1.3rem;
+    }
+    .absolute {
+        position: static;
+        width: auto;
+    }
+    .hidden {
+        display: flex;
+        flex-direction: row;
+        justify-content: left !important;
+        padding-left: 2rem;
+        width: 100%;
+        height: 5.52rem !important;
+        box-shadow: 0px 0px;
+        border-radius: 0;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        margin: 0;
+    }
+    .hidden ul li {
+        margin-right: .23rem;
+    }
+    .space {
+        display: none;
+    }
+    .share {
+        margin-top: 1.2rem !important;
+    }
+    .active {
+        position: absolute;
+        right: 2.05rem;
+        top: .7rem;
+    }
+    .fullwidth {
+        display: flex;
+        position: absolute;
+        width: 90%;
+    }
 }
